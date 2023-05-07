@@ -1,0 +1,23 @@
+﻿@startuml
+skinparam handwritten true
+left to right direction
+
+actor User as u
+package タスク管理 {
+u --> (タスクを登録する。)
+u --> (タスク一覧を確認する。)
+u --> (タスクの内容を編集する。)
+u --> (タスクを削除する。)
+u --> (タスクのステータスを変更する。)
+u --> (タスクのメモを編集する。)
+u --> (タスクをカンバンで確認する。)
+u --> (データの履歴を確認する。)
+}
+
+package Authenticate {
+u --> (サインインする。)
+u --> (サインアウトする。)
+u --> (サインアップする。)
+}
+
+@enduml
